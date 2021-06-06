@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      To Dos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-item>
+    <ion-label position="floating"><b>What is to be done?</b></ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <h5 position="floating"><b>Due Date</b></h5>
+      <ion-label position="floating">MM/DD/YYYY</ion-label>
+      <ion-datetime displayFormat="MM/DD/YYYY" min="1994-03-14" max="2030-12-12" value="2002-09-23T15:03:46.789"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating"><b>Description of event (if any)</b></ion-label>
+    <ion-textarea></ion-textarea>
+  </ion-item>
+  <ion-button expand="half" color="danger" (click)= "Cancelled">Cancel</ion-button>
+  <ion-button expand="half" color="success" (click)= "Saved">Save</ion-button>
+
+
+
+
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="Add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
